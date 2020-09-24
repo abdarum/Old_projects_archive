@@ -1,0 +1,9 @@
+[autorun]
+OPEN=SETUP.EXE
+ICON=MW3.ico
+label=Call of Duty®: Modern Warfare® 3
+
+[Content]
+MusicFiles=0
+PictureFiles=0
+VideoFiles=0

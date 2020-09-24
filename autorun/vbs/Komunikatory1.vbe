@@ -1,0 +1,1 @@
+x=msgbox("Start to open Skype and GG or kill to close Skype and GG. A po polsku: Napisz start lub kill. Je¿eli napiszesz start uruchomisz Skype oraz GG, natomiast kill zamyka te komunikatory.",64,"Komunikatory")

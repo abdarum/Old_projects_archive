@@ -1,0 +1,104 @@
+
+Aby uzyskaæ wiêcej informacji o poleceniu, wpisz HELP nazwa_polecenia
+ASSOC    Wyœwietla lub modyfikuje skojarzenia rozszerzeñ plików.
+ATTRIB   Wyœwietla lub zmienia atrybuty pliku.
+BREAK    Wy³¹cza lub w³¹cza rozszerzone sprawdzanie klawiszy CTRL+C.
+BCDEDIT  Ustawia w³aœciwoœci w bazie danych rozruchu w celu kontroli ³adowania
+         rozruchu.
+CACLS    Wyœwietla lub modyfikuje listy kontroli dostêpu (ACL) plików.
+CALL     Wywo³uje jeden program wsadowy z innego.
+CD       Wyœwietla lub zmienia nazwê bie¿¹cego katalogu.
+CHCP     Wyœwietla lub ustawia numer aktywnej strony kodowej.
+CHDIR    Wyœwietla lub zmienia nazwê bie¿¹cego katalogu.
+CHKDSK   Sprawdza dysk i wyœwietla raport o jego stanie.
+CHKNTFS  Wyœwietla lub modyfikuje stan sprawdzania dysku przy rozruchu.
+CLS      Czyœci ekran.
+CMD      Uruchamia nowe wyst¹pienie interpretera poleceñ systemu Windows.
+COLOR    Ustawia domyœlny kolor t³a i pierwszego planu konsoli.
+COMP     Porównuje zawartoœæ dwóch plików lub zestawów plików.
+COMPACT  Wyœwietla i pozwala na modyfikacjê listy plików. skompresowanych na
+         partycji NTFS.
+CONVERT  Konwertuje woluminy FAT na woluminy NTFS. Nie mo¿na konwertowaæ
+         bie¿¹cego dysku.
+COPY     Kopiuje jeden lub wiele plików do innej lokalizacji.
+DATE     Wyœwietla lub ustawia datê.
+DEL      Usuwa jeden lub wiele plików.
+DIR      Wyœwietla listê plików i podkatalogów katalogu.
+DISKCOMP Porównuje zawartoœæ dwóch dyskietek.
+DISKCOPY Kopiuje zawartoœæ jednej dyskietki na drug¹.
+DISKPART Wyœwietla lub konfiguruje w³aœciwoœci partycji dysków.
+DOSKEY   Edytuje wiersze poleceñ, przywraca polecenia Windows i tworzy makra.
+DRIVERQUERY Wyœwietla bie¿¹cy stan i w³aœciwoœci sterownika urz¹dzenia.
+ECHO     Wyœwietla komunikaty lub wy³¹cza i w³¹cza echo poleceñ.
+ENDLOCAL Koñczy lokalne zmiany œrodowiska w plikach wsadowych.
+ERASE    Usuwa jeden lub wiele plików.
+EXIT     Koñczy dzia³anie programu CMD.EXE (interpretera poleceñ).
+FC       Porównuje dwa pliki lub zestawy plików i wyœwietla ró¿nice miêdzy
+         nimi.
+FIND     Wyszukuje ci¹g tekstowy w pliku lub plikach.
+FINDSTR  Wyszukuje ci¹gi znaków w plikach.
+FOR      Uruchamia podane polecenie dla ka¿dego pliku z zestawu plików.
+FORMAT   Formatuje dysk do u¿ytku w systemie Windows.
+FSUTIL   Wyœwietla lub konfiguruje w³aœciwoœci systemu plików.
+FTYPE    Wyœwietla i modyfikuje typy plików u¿ywane w skojarzeniach rozszerzeñ
+         plików.
+GOTO     Przekazuje sterowanie interpretera poleceñ systemu Windows do wiersza
+         o podanej etykiecie w pliku wsadowym.
+GPRESULT Wyœwietla informacje zasad grupy dla komputera lub u¿ytkownika.
+GRAFTABL W³¹cza wyœwietlanie przez system Windows znaków rozszerzonych w
+         trybie graficznym.
+HELP     Podaje informacje o poleceniach systemu Windows.
+ICACLS   Umo¿liwia wyœwietlanie i modyfikowanie list ACL dla plików oraz
+         katalogów, a tak¿e wykonywanie i przywracanie kopii zapasowych
+         tych list.
+IF       Dokonuje warunkowego przetwarzania w plikach wsadowych.
+LABEL    Tworzy, zmienia lub usuwa etykietê(etykiety) woluminu dysku.
+MD       Tworzy katalog.
+MKDIR    Tworzy katalog.
+MKLINK   Tworzy ³¹cza symboliczne i ³¹cza twarde.
+MODE     Konfiguruje urz¹dzenia systemowe.
+MORE     Wyœwietla informacje ekran po ekranie.
+MOVE     Przenosi jeden lub wiele plików z jednego katalogu do drugiego.
+OPENFILES Wyœwietla pliki otwarte przez u¿ytkowników zdalnych dla udzia³u
+          plików.
+PATH     Wyœwietla lub ustawia œcie¿kê przeszukiwania dla plików wykonywalnych.
+PAUSE    Wstrzymuje przetwarzanie pliku wsadowego i wyœwietla komunikat.
+POPD     Przywraca katalog zapisany przez PUSHD.
+PRINT    Drukuje plik tekstowy.
+PROMPT   Zmienia znak zachêty wiersza polecenia systemu Windows.
+PUSHD    Zapisuje bie¿¹cy katalog, a nastêpnie zamienia go.
+RD       Usuwa katalog.
+RECOVER  Odzyskuje mo¿liwe do odczytania informacje z uszkodzonego dysku.
+REM      Oznacza komentarze w pliku wsadowym lub pliku CONFIG.SYS.
+REN      Zmienia nazwê pliku lub plików.
+RENAME   Zmienia nazwê pliku lub plików.
+REPLACE  Zamienia pliki.
+RMDIR    Usuwa katalog.
+ROBOCOPY Zaawansowane narzêdzie do kopiowania plików i drzew katalogów.
+SET      Wyœwietla, ustawia lub usuwa zmienne œrodowiskowe systemu Windows.
+SETLOCAL Rozpoczyna lokalne zmiany œrodowiska w plikach wsadowych.
+SC       Wyœwietla lub konfiguruje us³ugi (procesy w tle).
+SCHTASKS Planuje uruchamianie poleceñ i programów na komputerze.
+SHIFT    Zmienia pozycje parametrów w plikach wsadowych.
+SHUTDOWN Zezwala na lokalne lub zdalne wy³¹czenie komputera.
+SORT     Sortuje wprowadzone dane.
+START    Uruchamia program lub polecenie w oddzielnym oknie.
+SUBST    Przypisuje œcie¿ce literê dysku.
+SYSTEMINFO Wyœwietla w³aœciwoœci i konfiguracjê komputera.
+TASKLIST Wyœwietla wszystkie uruchomione zadania ³¹cznie z us³ugami.
+TASKKILL Koñczy lub zatrzymuje uruchomiony proces lub aplikacjê.
+TIME     Wyœwietla lub ustawia czas systemowy.
+TIMEOUT \t s Opó¿nienie - zamiast s nale¿y wpisaæ liczbê sekund.
+TITLE    Ustawia tytu³ okna dla sesji CMD.EXE.
+TREE     Wyœwietla strukturê katalogów dysku lub œcie¿ki.
+TYPE     Wyœwietla zawartoœæ pliku tekstowego.
+VER      Wyœwietla wersjê systemu Windows.
+VERIFY   Instruuje system Windows, aby sprawdza³ poprawnoœæ zapisu plików
+         na dysku.
+VOL      Wyœwietla etykietê oraz numer seryjny dysku.
+XCOPY    Kopiuje pliki i katalogi.
+WMIC     Wyœwietla informacje WMI wewn¹trz interaktywnej pow³oki poleceñ.
+
+Aby uzyskaæ wiêcej informacji na temat narzêdzi, zobacz opis wiersza polecenia
+w pomocy online.
+

@@ -1,0 +1,2 @@
+x=msgbox("Write start or kill.",64,"Komunikatory") 
+

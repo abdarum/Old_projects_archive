@@ -1,0 +1,52 @@
+
+CHOICE [/C wybory] [/N] [/CS] [/T limit_czasu /D wybór] [/M tekst]
+
+Opis:
+    To narzêdzie umo¿liwia u¿ytkownikowi wybranie jednego elementu z listy
+    wyborów i zwraca indeks zaznaczonego elementu.
+
+Lista parametrów:
+   /C    wybory        Okreœla listê wyboru do utworzenia.
+                       Domyœlna lista to "TN".
+
+   /N                  Umieszcza listê wyboru w monicie.
+                       Komunikat jest wyœwietlany przed monitem
+                       i wybory s¹ nadal w³¹czone.
+
+   /CS                 Umo¿liwia zaznaczanie wyborów uwzglêdniaj¹cych wielkoœæ
+                       liter.
+                       Domyœlnie narzêdzie nie uwzglêdnia wielkoœci liter.
+
+   /T    limit czasu   Liczba sekund, po up³ywie których zostanie dokonany
+                       domyœlny wybór. Akceptowane s¹ wartoœci z zakresu od 0 do
+
+                       9999. Je¿eli wprowadzisz cyfrê 0, domyœlny wybór
+                       zostanie dokonany natychmiast.
+
+   /D    wybór         Okreœla wybór domyœlny po up³ywie nnnn s. Znak musi
+                       znajdowaæ siê w zestawie wyborów okreœlonych przy u¿yciu
+                       opcji /C. Wartoœæ nnnn musi byæ okreœlona parametrem /T.
+
+   /M    tekst         Okreœla tekst komunikatu wyœwietlanego przed
+                       monitem. Je¿eli tekst nie zostanie okreœlony, narzêdzie
+                       wyœwietli tylko monit.
+
+   /?                  Wyœwietla ten komunikat pomocy.
+
+   UWAGA:
+   Zmienna œrodowiskowa ERRORLEVEL jest ustawiona na indeks klucza
+   wybranego z zestawu wyborów. Pierwszy wybór na liœcie
+   zwraca wartoœæ 1, drugi wartoœæ 2 itd.
+   Je¿eli u¿ytkownik naciœnie klawisz nieodpowiadaj¹cy prawid³owemu wyborowi,
+   narzêdzie wyemituje sygna³ ostrzegawczy. Je¿eli narzêdzie wykryje b³¹d,
+   zostanie zwrócona wartoœæ ERRORLEVEL wynosz¹ca 255. Je¿eli u¿ytkownik
+   naciœnie klawisze CTRL+BREAK lub CTRL+C, narzêdzie zwróci wartoœæ
+   ERRORLEVEL wynosz¹c¹ 0. Je¿eli parametry zmiennej œrodowiskowej ERRORLEVEL
+   s¹ u¿ywane w programie wsadowym, wyœwietli je w kolejnoœci malej¹cej.
+
+Przyk³ady:
+   CHOICE /?
+   CHOICE /C TNA /M "Naciœnij T dla Tak, N dla Nie lub A dla Anuluj."
+   CHOICE /T 10 /C tna /CS /D t
+   CHOICE /C ab /M "Wybierz literê a dla opcji 1 oraz literê b dla opcji 2."
+   CHOICE /C ab /N /M "Wybierz literê a dla opcji 1 oraz literê b dla opcji 2."

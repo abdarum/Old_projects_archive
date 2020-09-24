@@ -1,0 +1,106 @@
+C:\Windows\system32>color
+Ustawia domyœlne kolory t³a i pierwszego planu.
+
+COLOR [atr]
+
+  atr        Okreœla atrybut koloru dla wyjœcia konsoli
+
+Atrybuty kolorów s¹ okreœlone przez DWIE cyfry heksadecymalne -- pierwsza
+oznacza t³o, druga pierwszy plan. Ka¿da cyfra
+mo¿e byæ jedn¹ z wartoœci:
+
+    0 = Czarny      8 = Szary
+    1 = Niebieski   9 = Jasnoniebieski
+    2 = Zielony     A = Jasnozielony
+    3 = B³êkitny    B = Jasnob³êkitny
+    4 = Czerwony    C = Jasnoczerwony
+    5 = Purpurowy   D = Jasnopurpurowy
+    6 = ¯ó³ty       E = Jasno¿ó³ty
+    7 = Bia³y       F = Jaskrawobia³y
+
+Jeœli nie podano argumentu, u¿ywany jest kolor odpowiadaj¹cy chwili
+uruchomienia CMD.EXE. Wartoœæ ta jest brana z bie¿¹cego okna konsoli,
+z opcji /T wiersza polecenia lub z wartoœci rejestru
+DefaultColor.
+
+Polecenie COLOR ustawia ERRORLEVEL na 1, jeœli podjêto próbê okreœlenia tej
+samej wartoœci dla t³a i dla pierwszego planu w poleceniu COLOR.
+
+Przyk³ad: "COLOR fc" daje kolor jasnoczerwony na jaskrawobia³ym tle.
+
+
+C:\Windows\system32>taskkill /?
+
+
+
+TASKKILL [/S system [/U nazwa_u¿ytkownika [/P [has³o]]]]
+         { [/FI filtr] [/PID id_procesu | /IM nazwa_obrazu] } [/T] [/F]
+
+Opis:
+    To narzêdzie jest u¿ywane do koñczenia zadañ wed³ug identyfikatorów
+    procesów PID lub nazw obrazów.
+
+Lista parametrów:
+    /S    system           Okreœla system zdalny do pod³¹czenia.
+
+    /U    [domena\]u¿ytkownik Okreœla kontekst u¿ytkownika, w którym
+                              polecenie powinno byæ wykonane.
+
+    /P    [has³o]             Okreœla has³o dla danego kontekstu u¿ytkownika.
+                              W razie pominiêcia monituje o podanie danych.
+
+    /FI   filtr               Stosuje filtr do wybranego zestawu zadañ.
+                              Zezwala na u¿ycie "*", np. nazwa_obrazu eq acme*
+
+    /PID  id_procesu          Okreœla identyfikator PID procesu do zakoñczenia.
+                              U¿yj polecenia TaskList, aby uzyskaæ
+                              identyfikator PID.
+
+    /IM   nazwa_obrazu        Okreœla nazwê obrazu procesu do
+                              zakoñczenia. Mo¿na u¿yæ symbolu
+                              wieloznacznego '*', aby okreœliæ
+                              wszystkie zadania lub nazwy obrazu.
+
+    /T                        Koñczy okreœlony proces i wszystkie
+                              procesy podrzêdne, które zosta³y
+                              uruchomione przez dany proces.
+
+    /F                        Okreœla wymuszone zakoñczenie procesów.
+
+    /?                        Wyœwietla ten komunikat pomocy.
+
+Filtry:
+    Nazwa filtru   Prawid³owe operatory      Prawid³owe wartoœci
+    ------------   --------------------      ------------------------
+    STATUS         eq, ne                    RUNNING |
+                                             NOT RESPONDING | UNKNOWN
+    IMAGENAME      eq, ne                    Nazwa obrazu.
+    PID            eq, ne, gt, lt, ge, le    Wartoœæ identyfikatora PID.
+    SESSION        eq, ne, gt, lt, ge, le    Numer sesji.
+    CPUTIME        eq, ne, gt, lt, ge, le    Czas procesora w formacie
+                                             hh:mm:ss.
+                                             hh - godziny,
+                                             mm - minuty, ss - sekundy
+    MEMUSAGE       eq, ne, gt, lt, ge, le    U¿ycie pamiêci w KB
+    USERNAME       eq, ne                    Nazwa u¿ytkownika w formacie
+                                             [domena\]u¿ytkownik
+    MODULES        eq, ne                    Nazwa biblioteki DLL
+    SERVICES       eq, ne                    Nazwa us³ugi
+    WINDOWTITLE    eq, ne                    Tytu³ okna
+
+    UWAGA
+    ----
+    1) Symbol wieloznaczny '*' dla prze³¹cznika /IM jest akceptowany
+       tylko wtedy, gdy stosowany jest filtr.
+    2) Zakoñczenie procesów zdalnych zawsze bêdzie wymuszane (/F).
+    3) Filtry "WINDOWTITLE" i "STATUS" nie s¹ brane pod uwagê, jeœli okreœlony
+       jest komputer zdalny.
+
+Przyk³ady:
+    TASKKILL /IM notepad.exe
+    TASKKILL /PID 1230 /PID 1241 /PID 1253 /T
+    TASKKILL /F /IM cmd.exe /T
+    TASKKILL /F /FI "PID ge 1000" /FI "WINDOWTITLE ne untitle*"
+    TASKKILL /F /FI "USERNAME eq ZARZ¥DZANIE NT\SYSTEM" /IM notepad.exe
+    TASKKILL /S system /U domena\nazwa_u¿ytkownika /FI "USERNAME ne NT*" /IM *
+    TASKKILL /S system /U nazwa_u¿ytkownika /P has³o /FI "IMAGENAME eq note*"

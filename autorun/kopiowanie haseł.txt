@@ -1,0 +1,2 @@
+@echo off 
+echo T | copy c:windows*.pwl {tu wpisz nazwe dysku np.H}
